@@ -71,3 +71,21 @@ export default defineConfig([
   },
 ])
 ```
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+DAVID'S NOTES:
+
+cd into flowboard folder
+npm run dev: Makes a server
+copy link to see the website on google chrome
+
+File	        Purpose
+main.jsx	    Starting point of the React app
+App.jsx	Main    component shown on the page
+index.css	    Global styling
+package.json	Stores dependencies and scripts
+
+HomePage.tsx
+ - Sidebar.tsx
+ - Topbar.tsx
