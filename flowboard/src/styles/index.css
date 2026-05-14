@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -33,7 +35,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
-    --text-h: #f3f4f6;
+    --text-h: #16171d;
     --bg: #16171d;
     --border: #2e303a;
     --code-bg: #1f2028;
@@ -51,7 +53,7 @@
 }
 
 #root {
-  width: 1126px;
+  width: 1536px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -64,11 +66,15 @@
 
 body {
   margin: 0;
+  background-color: white;
+  color: black;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 h1,
 h2 {
-  font-family: var(--heading);
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   color: var(--text-h);
 }
@@ -108,4 +114,38 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.title {
+  font-size: 30px;
+  margin-left: -1390px;
+  margin-top: 15px;
+}
+
+.box {
+  width: 1500px;
+  height: 720px;
+  margin-left: 15px;
+  margin-top: -25px;
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 20px;
+}
+
+.line {
+  width: 1505px;
+  border-top: 3px solid gray;
+  margin-top: -670px;
+  margin-left: 15px;
+}
+
+.line2 {
+  height: 665px;
+  border-left: 3px solid gray;
+  margin-left: 200px;
+}
+
+.FlowBoard {
+  margin-top: -700px;
+  margin-left: -1300px;
 }
