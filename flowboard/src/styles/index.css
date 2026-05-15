@@ -144,6 +144,7 @@ code {
 
 .line2 {
   position: absolute;
+  justify-content: space-between;
   top: 70px;
   left: 200px;
   height: calc(100% - 70px);
@@ -197,4 +198,93 @@ code {
   position: absolute;
   top: -59px;
   left: 10px;
+}
+
+.HomeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  padding: 0;
+  align-items: flex-start;
+  position: absolute;
+  top: 50px;
+  left: -190px;
+}
+
+.HomeButton svg {
+  width: 50px;
+  height: 50px;
+}
+
+.SettingsButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  padding: 0;
+  align-items: flex-start;
+  position: absolute;
+  top: 110px;
+  left: -190px;
+}
+
+.ChartButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  padding: 0;
+  align-items: flex-start;
+  position: absolute;
+  top: 110px;
+  left: -190px;
+}
+
+.PencilButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  padding: 0;
+  align-items: flex-start;
+  position: absolute;
+  top: 110px;
+  left: -190px;
+}
+
+.SirenButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  padding: 0;
+  align-items: flex-start;
+  position: absolute;
+  top: 110px;
+  left: -190px;
+}
+
+.ClockButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  padding: 0;
+  align-items: flex-start;
+  position: absolute;
+  top: 110px;
+  left: -190px;
+}
+
+.TasksButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  padding: 0;
+  align-items: flex-start;
+  position: absolute;
+  top: 110px;
+  left: -190px;
 }
