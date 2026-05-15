@@ -140,6 +140,8 @@ code {
   width: 100%;
   border-top: 3px solid gray;
   margin-top: 70px;
+  justify-content: space-between;
+  position: relative;
 }
 
 .line2 {
@@ -152,7 +154,7 @@ code {
 
 .FlowBoard {
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 30px;
   margin: 0;
 }
@@ -165,6 +167,8 @@ code {
   bottom: 20px;
   text-align: left;
 }
+
+/* Tasks */
 
 .task-bar {
   display: flex;
@@ -182,8 +186,166 @@ code {
   font-size: 16px;
 }
 
-.task-list {
+.task-table {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #e5e4e7;
+  border-radius: 14px;
+  background: white;
+}
+
+.task-header,
+.task-row {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr 1fr 1fr 1.4fr 1.6fr;
+  align-items: center;
+}
+
+.task-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e4e7;
+  font-size: 13px;
+  font-weight: 700;
+  color: #34303d;
+  background: #8f8a96;
+
+}
+
+.task-row {
+  min-height: 68px;
+  padding: 0 16px;
+  border-bottom: 1px solid #eeeeef;
+  font-size: 14px;
+}
+
+.task-row:last-child {
+  border-bottom: none;
+}
+
+.task-cell {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.task-title-cell {
+  font-weight: 600;
+}
+
+.task-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-tags {
+  flex-wrap: wrap;
+}
+
+.task-tag {
+  padding: 4px 8px;
+  border: 1px solid #d8d6dc;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.task-actions {
+  justify-content: flex-end;
+}
+
+.task-button {
+  padding: 7px 10px;
+  border: 1px solid #d8d6dc;
+  border-radius: 8px;
+  background: white;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.icon-button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.priority,
+.energy {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.priority-high::after,
+.energy-high::after {
+  content: " ↑";
+}
+
+.priority-medium::after,
+.energy-medium::after {
+  content: " —";
+}
+
+.priority-low::after,
+.energy-low::after {
+  content: " ↓";
+}
+
+.task-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+}
+
+.task-checkbox-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+/* Tasks end */
+
+
+
+.NotiButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  align-items: flex-start;
+  position: absolute;
+  top: -57px;
+  left: 1350px;
+}
+
+.UserButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  align-items: flex-start;
+  position: absolute;
+  top: -59px;
+  left: 1420px;
+}
+
+.MenuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  align-items: flex-start;
+  position: absolute;
+  top: -59px;
+  left: 10px;
 }

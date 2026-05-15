@@ -27,7 +27,7 @@ export type Task = {
   title: string;
   category: TaskCategory;
   priority: TaskPriority;
-  enegry: TaskEnergy;
+  energy: TaskEnergy;
   estTime: number;
   status: TaskStatus;
   tag: TaskTag[];

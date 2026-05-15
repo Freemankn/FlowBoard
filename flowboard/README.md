@@ -127,5 +127,18 @@ Right now, I'm learning the objective, the syntax, file layout, commands, and it
 
 CHALLENGES: Visually trying to understand what components go in what file, example: Top bar and left bar
 
+
+
+5/14
+git branch: shows all branches
+git pull: Updates the program from the website to your local computer
+git checkout -b (your made up branch name) origin/(branch your pulling from the website)
+git fetch: I think this just gets all of the branches and stuff that may not have existed before I opened the VSCode window
+           - Do it before switching to a new branch that Freeman made
+git branch -a: Shows all branches in the repository
+
+HomePageRefactor
+
+CHALLENGES: Having to understand what the file layout actually meant, specifically for AppLayout.tsx and App.tsx. AppLayout.tsx is supposed to be for the entire visual side, where I thought that was what App.tsx was for. I put all of the companenets into that file.App.tsx is kind of like the director of when you put in the link to a specific place, App.tsx routes your computer
 5/14
 Installed react-router-dom
