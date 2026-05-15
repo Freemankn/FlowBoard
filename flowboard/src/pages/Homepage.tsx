@@ -1,8 +1,6 @@
 function HomePage () {
     return (
-        <main>
-            <h1 className="title">Home</h1>
-        </main>
+        <h1 className="title"></h1>
     );
 }
 

@@ -117,21 +117,24 @@ code {
 }
 
 .title {
-  font-size: 30px;
-  margin-left: -1390px;
-  margin-top: 15px;
+  font-size: 37px;
+  margin-left: -1200px;
+  margin-top: -50px;
 }
 
 .box {
   width: 1500px;
   height: 720px;
-  margin-left: 15px;
-  margin-top: -25px;
+  margin: 15px auto;
   background-color: white;
   border: 3px solid gray;
   border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 50px;
 }
 
+<<<<<<< HEAD
 .topBarLine {
   width: 1505px;
   border-top: 3px solid gray;
@@ -139,15 +142,34 @@ code {
   
   margin-top: -670px;
   margin-left: 15px;
+=======
+.line {
+  width: 100%;
+  border-top: 3px solid gray;
+  margin-top: 70px;
+>>>>>>> HomePageRefactor
 }
 
 .line2 {
-  height: 665px;
+  position: absolute;
+  top: 70px;
+  left: 200px;
+  height: calc(100% - 70px);
   border-left: 3px solid gray;
-  margin-left: 200px;
 }
 
-.AppName {
+.FlowBoard {
+  position: absolute;
+  top: 20px;
+  left: 30px;
   margin: 0;
+}
 
+.page-content {
+  position: absolute;
+  top: 90px;
+  left: 220px;
+  right: 20px;
+  bottom: 20px;
+  text-align: left;
 }

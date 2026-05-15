@@ -1,13 +1,13 @@
-function TopBarLine () {
-    return (
-        <header className="topBarLine">
-            <h2 className="AppName">FlowBoard</h2>
-        </header>
+type TopBarLineProps = {
+  children: React.ReactNode;
+};
 
-        // <main>
-        //     <h2 className="AppName">FlowBoard</h2>
-        //     <div className="line"></div>
-        // </main>
+
+function TopBarLine({children}: TopBarLineProps) {
+    return (
+        <div className="line">
+            {children}
+        </div>
     );
 }
 

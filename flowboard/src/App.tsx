@@ -1,22 +1,31 @@
-import HomePage from "./pages/Homepage";
-import OuterBox from "./components/layout/AppLayout";
-import TopBarLine from "./components/layout/Topbar";
-import SideBar from "./components/layout/Sidebar";
+// App.tsx
 
-function App () {
+import { Routes, Route } from "react-router-dom";
+import AppLayout from "./components/layout/AppLayout";
+import Homepage from "./pages/Homepage";
+
+
+
+function App() {
   return (
-    <div>
-      <HomePage />
-      <OuterBox />
-      <TopBarLine />
-      <SideBar />
-    </div>
-
+    <Routes>
+      <Route element={<AppLayout />}>
+        <Route path="/" element={<Homepage />} />
+      </Route>
+    </Routes>
   );
-  
 }
 
-
-
-
 export default App;
+
+// import { Routes, Route } from "react-router-dom";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/" element={<h1>Routing works</h1>} />
+//     </Routes>
+//   );
+// }
+
+// export default App;
