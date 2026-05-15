@@ -1,3 +1,5 @@
+// ./src/components/layout/AppLayout.tsx
+
 import { Outlet } from "react-router-dom";
 import OuterBox from "./OuterBox";
 import TopBarLine from "./Topbar";

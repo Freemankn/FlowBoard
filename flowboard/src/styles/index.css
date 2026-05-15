@@ -138,6 +138,8 @@ code {
   width: 100%;
   border-top: 3px solid gray;
   margin-top: 70px;
+  justify-content: space-between;
+  position: relative;
 }
 
 .line2 {
@@ -150,7 +152,7 @@ code {
 
 .FlowBoard {
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 30px;
   margin: 0;
 }
@@ -162,4 +164,37 @@ code {
   right: 20px;
   bottom: 20px;
   text-align: left;
+}
+
+.NotiButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  align-items: flex-start;
+  position: absolute;
+  top: -57px;
+  left: 1350px;
+}
+
+.UserButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  align-items: flex-start;
+  position: absolute;
+  top: -59px;
+  left: 1420px;
+}
+
+.MenuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  align-items: flex-start;
+  position: absolute;
+  top: -59px;
+  left: 10px;
 }
