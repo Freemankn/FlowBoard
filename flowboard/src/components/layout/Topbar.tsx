@@ -1,8 +1,13 @@
-function TopBarLine () {
+type TopBarLineProps = {
+  children: React.ReactNode;
+};
+
+
+function TopBarLine({children}: TopBarLineProps) {
     return (
-        <main>
-            <div className="line"></div>
-        </main>
+        <div className="line">
+            {children}
+        </div>
     );
 }
 

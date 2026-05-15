@@ -126,3 +126,6 @@ Right now, I'm learning the objective, the syntax, file layout, commands, and it
 <div> - square shape
 
 CHALLENGES: Visually trying to understand what components go in what file, example: Top bar and left bar
+
+5/14
+Installed react-router-dom
