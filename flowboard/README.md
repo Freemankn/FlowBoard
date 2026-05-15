@@ -142,3 +142,97 @@ HomePageRefactor
 CHALLENGES: Having to understand what the file layout actually meant, specifically for AppLayout.tsx and App.tsx. AppLayout.tsx is supposed to be for the entire visual side, where I thought that was what App.tsx was for. I put all of the companenets into that file.App.tsx is kind of like the director of when you put in the link to a specific place, App.tsx routes your computer
 5/14
 Installed react-router-dom
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+FREEMAN'S NOTES:
+
+## Progress Notes
+
+### 5/14 - Freeman's Contributions
+
+#### Contributions
+
+- Helped fix the issue where the outer box was not displaying correctly.
+- Added the `TaskTable` component to begin displaying tasks in a structured table format.
+- Worked on understanding how the main React layout flow connects across the project, especially through `App.tsx` and `AppLayout.tsx`.
+- Began connecting the task-related files/components so the task page can eventually display task data clearly.
+
+#### Files/Areas Worked On
+
+##### `App.tsx`
+
+`App.tsx` acts as one of the main entry points for the React application. It helps control what main components are rendered and connects the overall app structure together.
+
+In this stage, we focused on understanding how `App.tsx` connects to the layout and page components so that new task-related components could be added without breaking the overall structure.
+
+##### `AppLayout.tsx`
+
+`AppLayout.tsx` controls the shared page layout of the application. This includes the outer structure that wraps around the main page content.
+
+One challenge was understanding why the outer box was not displaying correctly. Fixing this required tracing how the layout was structured and how child components were being rendered inside the layout.
+
+##### `TaskTable`
+
+The `TaskTable` component was added to display task information in a table-like format. This is an important step toward organizing task data visually instead of showing it as unstructured content.
+
+The table is intended to support task-related information such as:
+
+- Task name
+- Task status
+- Task priority
+- Due date
+- Assigned user or owner
+
+This component will likely be expanded later as the task data model becomes more complete.
+
+##### `task.ts`
+
+The `task.ts` file is related to defining the structure of task data. This file helps keep task objects consistent across the project.
+
+Instead of writing task data differently in multiple components, `task.ts` can define a shared `Task` type or interface. This makes the project easier to maintain because every task follows the same structure.
+
+
+
+```ts
+
+export type TaskStatus = "todo" | "in-progress" | "done";
+export type TaskEnergy = "low" | "medium" | "high";
+export type TaskPriority = "low" | "medium" | "high";  
+
+export type TaskCategory =
+  | "school"
+  | "work"
+  | "personal"
+  | "health"
+  | "finance"
+  | "chores"
+  | "other";
+
+export type TaskTag =
+  | "urgent"
+  | "important"
+  | "quick"
+  | "deep-work"
+  | "follow-up"
+  | "waiting"
+  | "blocked";
+
+export type Task = {
+  id: string;
+  title: string;
+  category: TaskCategory;
+  priority: TaskPriority;
+  energy: TaskEnergy;
+  estTime: number;
+  status: TaskStatus;
+  tag: TaskTag[];
+};
+
+```
+#### Challenges:
+- Needed to understand the role of App.tsx and how it controls the main application rendering.
+- Needed to understand how AppLayout.tsx wraps and displays the page content.
+- Had to debug why the outer box was not appearing correctly.
+- Had to connect the task table work with the existing app structure without disrupting the layout.
+- Needed to begin thinking about how task data should be structured through files like task.ts.
