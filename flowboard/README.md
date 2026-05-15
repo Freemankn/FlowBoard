@@ -133,6 +133,9 @@ CHALLENGES: Visually trying to understand what components go in what file, examp
 git branch: shows all branches
 git pull: Updates the program from the website to your local computer
 git checkout -b (your made up branch name) origin/(branch your pulling from the website)
+git fetch: I think this just gets all of the branches and stuff that may not have existed before I opened the VSCode window
+           - Do it before switching to a new branch that Freeman made
+git branch -a: Shows all branches in the repository
 
 HomePageRefactor
 
