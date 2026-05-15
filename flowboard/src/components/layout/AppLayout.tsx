@@ -1,9 +1,22 @@
-function OuterBox () {
+import { Outlet } from "react-router-dom";
+import OuterBox from "./OuterBox";
+import TopBarLine from "./Topbar";
+import SideBar from "./Sidebar";
+
+function AppLayout () {
     return (
-        <main>
-            <div className="box"></div>
+    <div>
+    <OuterBox>
+        <TopBarLine />
+        <SideBar />
+
+        <main className="page-content">
+            <Outlet />
         </main>
+    </OuterBox>
+    </div>
+   
     );
 }
 
-export default OuterBox;
+export default AppLayout;
