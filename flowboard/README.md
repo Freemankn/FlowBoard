@@ -140,5 +140,10 @@ git branch -a: Shows all branches in the repository
 HomePageRefactor
 
 CHALLENGES: Having to understand what the file layout actually meant, specifically for AppLayout.tsx and App.tsx. AppLayout.tsx is supposed to be for the entire visual side, where I thought that was what App.tsx was for. I put all of the companenets into that file.App.tsx is kind of like the director of when you put in the link to a specific place, App.tsx routes your computer
-5/14
+
+5/15
 Installed react-router-dom
+
+CHALLENGES: Having to figure out the containers for adding the button icons, and figuring out how the syntax working for importing icon images from the lucide website. Also arranging things is somewhat annoying since the icons/text/shapes I move might affect the other assets on the screen. 
+
+CONTRIBUTIONS: I added the button icons on the top bar, and added the button images to the side bar, I need to order them and arrage them with the words attached so users know what each button is supposed to take them. Files worked on today: AppLayout.tsx, Sidebar.tsx, Topbar.tsx, App.tsx, main.tsx, index.css.
