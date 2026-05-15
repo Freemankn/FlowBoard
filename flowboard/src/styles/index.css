@@ -134,20 +134,10 @@ code {
   margin-top: 50px;
 }
 
-<<<<<<< HEAD
-.topBarLine {
-  width: 1505px;
-  border-top: 3px solid gray;
-  display: flex;
-  
-  margin-top: -670px;
-  margin-left: 15px;
-=======
 .line {
   width: 100%;
   border-top: 3px solid gray;
   margin-top: 70px;
->>>>>>> HomePageRefactor
 }
 
 .line2 {
