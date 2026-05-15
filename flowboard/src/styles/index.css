@@ -132,9 +132,11 @@ code {
   border-radius: 20px;
 }
 
-.line {
+.topBarLine {
   width: 1505px;
   border-top: 3px solid gray;
+  display: flex;
+  
   margin-top: -670px;
   margin-left: 15px;
 }
@@ -145,7 +147,7 @@ code {
   margin-left: 200px;
 }
 
-.FlowBoard {
-  margin-top: -700px;
-  margin-left: -1300px;
+.AppName {
+  margin: 0;
+
 }

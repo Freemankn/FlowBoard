@@ -1,8 +1,13 @@
 function TopBarLine () {
     return (
-        <main>
-            <div className="line"></div>
-        </main>
+        <header className="topBarLine">
+            <h2 className="AppName">FlowBoard</h2>
+        </header>
+
+        // <main>
+        //     <h2 className="AppName">FlowBoard</h2>
+        //     <div className="line"></div>
+        // </main>
     );
 }
 
